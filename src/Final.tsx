@@ -1,5 +1,6 @@
 import { ChangeEvent, useState } from 'react'
 import Vigenere from './assets/Vigenere.jpg'
+import Source from './assets/source-code.png'
 
 export const Final = () => {
     const [value, setValue] = useState<string>()
@@ -20,7 +21,8 @@ export const Final = () => {
         <img src={Vigenere} />
         <div>Шифр здесь:</div>
         <div className='secret-code'>{secretCode}</div>
-        <div data-key={key}>Но где же ключ...</div>
+        <div data-key={key}>Теперь бежим за ключом</div>
+        <img data-key={key} alt={key} className="img no-padding" src={Source} />
         <div className='btns'>
             <div>Введите расшифрованное слово</div>
             <input value={value} onChange={handleChange} />

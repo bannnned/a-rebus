@@ -12,6 +12,10 @@
   transition: filter 300ms;
 }
 
+.no-padding {
+  padding: 0;
+}
+
 .img-container {
   display: flex;
   align-items: center;
