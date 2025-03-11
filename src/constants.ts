@@ -1,1 +1,1 @@
-export const PATH_PREFIX = '/alfa-rebus/'
+export const PATH_PREFIX = 'alfa-rebus'
