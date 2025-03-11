@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router'
 import './App.css'
 import { Rebus } from './Rebus'
 import { Final } from './Final'
+import { PATH_PREFIX } from './constants'
 
 function App() {
   const rebusWord = import.meta.env.REBUS_WORD || '777'
@@ -9,8 +10,8 @@ function App() {
 
   return (
     <Routes>
-      <Route path={'/alfa-rebus/'} element={<Rebus />} />
-      <Route path={'/alfa-rebus/' + rebusWord} element={<Final />} />
+      <Route path={PATH_PREFIX} element={<Rebus />} />
+      <Route path={PATH_PREFIX + rebusWord} element={<Final />} />
     </Routes>
   )
 }

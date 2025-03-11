@@ -4,6 +4,7 @@ import reb3 from './assets/reb3.png'
 import './App.css'
 import { ChangeEvent, useState, KeyboardEvent } from 'react'
 import { useNavigate } from 'react-router'
+import { PATH_PREFIX } from './constants'
 
 export const Rebus = () => {
     const navigate = useNavigate();
@@ -16,7 +17,7 @@ export const Rebus = () => {
     }
 
     const handleRedirect = () => {
-        navigate(`/${value}`)
+        navigate(`/${PATH_PREFIX + value}`)
     }
 
     const handleEnter = ({ key }: KeyboardEvent<HTMLInputElement>) => {
