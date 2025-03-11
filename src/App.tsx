@@ -9,8 +9,8 @@ function App() {
 
   return (
     <Routes>
-      <Route index element={<Rebus />} />
-      <Route path={rebusWord} element={<Final />} />
+      <Route path={'/alfa-rebus/'} element={<Rebus />} />
+      <Route path={'/alfa-rebus/' + rebusWord} element={<Final />} />
     </Routes>
   )
 }
