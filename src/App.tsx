@@ -6,12 +6,13 @@ import { PATH_PREFIX } from './constants'
 
 function App() {
   const rebusWord = import.meta.env.REBUS_WORD || '777'
-  console.log({ rebusWord })
+  console.log({ rebusWord, PATH_PREFIX })
 
   return (
     <Routes>
-      <Route path={PATH_PREFIX} element={<Rebus />} />
-      <Route path={PATH_PREFIX + rebusWord} element={<Final />} />
+      <Route path={PATH_PREFIX} element={<Rebus />} >
+        <Route path={rebusWord} element={<Final />} />
+      </Route>
     </Routes>
   )
 }
