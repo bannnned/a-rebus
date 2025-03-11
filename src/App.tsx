@@ -14,7 +14,7 @@ function App() {
         <Route path={"/" + rebusWord} element={<Final />} />
       </Route>
     </Routes>
-
+  )
 }
 
 export default App
