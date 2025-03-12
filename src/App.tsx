@@ -5,7 +5,7 @@ import { Final } from './Final'
 import { PATH_PREFIX } from './constants'
 
 function App() {
-  const rebusWord = import.meta.env.REBUS_WORD || 'qwe'
+  const rebusWord = import.meta.env.REBUS_WORD || 'react-4-life'
   console.log({ rebusWord, PATH_PREFIX })
 
   return (
@@ -14,6 +14,7 @@ function App() {
         <Route index element={<Rebus />} />
         <Route path={rebusWord} element={<Final />} />
       </Route>
+      <Route path="*" element={<div>Не та дорога, путник</div>} />
     </Routes>
   )
 }
