@@ -9,14 +9,12 @@ export const Final = () => {
     const secretCode = import.meta.env.SECRET_CODE || 'vfjv-qmihim'
     const key = import.meta.env.KEY || 'vue'
     const decryptedWord = import.meta.env.DECRYPTED_WORD || 'alfa-winner'
-    const test = process.env.DECRYPTED_WORD
 
     const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
         setValue(target.value)
     }
 
     console.log('clck', { answer, secretCode, key, decryptedWord })
-    console.log('clck', { test })
 
 
     return <div className='rebus final'>
