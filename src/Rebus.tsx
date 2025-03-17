@@ -39,7 +39,7 @@ export const Rebus = () => {
             </div>
             <div className='btns'>
                 <h1>https://this url.com/*****-4-****</h1>
-                <input value={value} onChange={handleChange} onKeyDown={handleEnter} />
+                <input className="input" value={value} onChange={handleChange} onKeyDown={handleEnter} />
                 <button onClick={handleRedirect}  >Перейти</button>
             </div>
         </div>

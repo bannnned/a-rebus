@@ -10,6 +10,7 @@
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+  align-self: center;
 }
 
 .no-padding {
@@ -35,6 +36,7 @@
 
 .num {
   font-size: 86px;
+  align-self: center;
 }
 
 .btns {
@@ -68,5 +70,11 @@
 @media (width: 360px) {
   .img-container {
     display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .input {
+    height: 40px;
   }
 }
