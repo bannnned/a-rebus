@@ -64,3 +64,9 @@
   width: 200px;
   height: 100px;
 }
+
+@media (width: 360px) {
+  .img-container {
+    display: grid;
+  }
+}
