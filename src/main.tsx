@@ -7,7 +7,7 @@ import { PATH_PREFIX } from "./constants.ts";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter basename={"/" + PATH_PREFIX}>
+    <BrowserRouter basename={"/"}>
       <App />
     </BrowserRouter>
   </StrictMode>
