@@ -6,7 +6,6 @@ import { PATH_PREFIX } from './constants'
 
 function App() {
   const rebusWord = import.meta.env.REBUS_WORD || 'react-4-life'
-  console.log({ rebusWord, PATH_PREFIX })
 
   return (
     <Routes>
