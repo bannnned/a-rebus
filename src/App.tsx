@@ -10,7 +10,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path={PATH_PREFIX}>
+      <Route path="/">
         <Route index element={<Rebus />} />
         <Route path={rebusWord} element={<Final />} />
       </Route>
