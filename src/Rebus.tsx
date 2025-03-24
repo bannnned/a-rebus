@@ -38,9 +38,8 @@ export const Rebus = () => {
                 <img src={reb3} className="img" alt="React logo" />
             </div>
             <div className='btns'>
-                <h1>https://this url.com/*****-4-****</h1>
                 <input className="input" value={value} onChange={handleChange} onKeyDown={handleEnter} />
-                <button onClick={handleRedirect}  >Перейти</button>
+                <button onClick={handleRedirect}>Перейти</button>
             </div>
         </div>
     )
