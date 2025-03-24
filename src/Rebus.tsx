@@ -16,8 +16,8 @@ export const Rebus = () => {
   };
 
   const handleRedirect = () => {
-    // navigate(`/${PATH_PREFIX}/${value}`);
-    navigate(`/${value}`);
+    navigate(`/${PATH_PREFIX}/${value}`);
+    //navigate(`/${value}`);
     console.log({ value, PATH_PREFIX });
   };
 
