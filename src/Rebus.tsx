@@ -14,7 +14,7 @@ export const Rebus = () => {
     };
 
     const handleRedirect = () => {
-        navigate(`/${'alfa-rebus/' + value}`)
+        navigate(`/${'a-rebus/' + value}`)
     }
 
     const handleEnter = ({ key }: KeyboardEvent<HTMLInputElement>) => {
