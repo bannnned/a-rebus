@@ -1,5 +1,5 @@
 export const Link = () => {
     return <div>
-        Нужный ключ это не React, а ???
+        v-valuable v-user v-experience
     </div>
 }
