@@ -15,6 +15,10 @@ export const Rebus = () => {
     };
 
     const handleRedirect = () => {
+        if (value === 'react-for-life') {
+            navigate(`/${PATH_PREFIX}/${'react-4-life'}`)
+            return
+        }
         navigate(`/${PATH_PREFIX}/${value}`);
     }
 
