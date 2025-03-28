@@ -14,8 +14,6 @@ export const Final = () => {
         setValue(target.value)
     }
 
-    console.log('clck', { answer, secretCode, key, decryptedWord })
-
 
     return <div className='rebus final'>
         <img src={Vigenere} />
