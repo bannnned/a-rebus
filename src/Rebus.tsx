@@ -8,19 +8,22 @@ import { PATH_PREFIX } from './constants';
 
 export const Rebus = () => {
     const navigate = useNavigate();
-    const [value, setValue] = useState<string>();
+    const [value, setValue] = useState<string>("");
 
     const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
         setValue(target.value);
     };
 
     const handleRedirect = () => {
+        if (!value) {
+            return;
+        }
         if (value === 'react-for-life') {
-            navigate(`/${PATH_PREFIX}/${'react-4-life'}`)
-            return
+            navigate(`/${PATH_PREFIX}/${'react-4-life'}`);
+            return;
         }
         navigate(`/${PATH_PREFIX}/${value}`);
-    }
+    };
 
     const handleEnter = ({ key }: KeyboardEvent<HTMLInputElement>) => {
         if (key === "Enter") {

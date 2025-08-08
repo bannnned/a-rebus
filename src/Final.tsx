@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router'
 import { PATH_PREFIX } from './constants'
 
 export const Final = () => {
-    const [value, setValue] = useState<string>()
+    const [value, setValue] = useState<string>('')
     const navigate = useNavigate();
 
     const answer = import.meta.env.ANSWER || 'winner-winner-chicken-dinner'
